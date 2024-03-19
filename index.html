@@ -12,12 +12,12 @@
 <body>
 
     <main class="main">
-        <div clas>
+        <div>
             <img class="cabecalho__logo" src="/assets/logoAlura.png" alt="logoAlura">
         </div>
         <section class="principal">
             <div class="principal__sessao">
-            <textarea id="texto" class="principal__sessao__titulo" placeholder="Digite seu texto" onkeyup="apenasLetrasMinusculas(this)"></textarea>
+            <textarea id="texto" class="principal__sessao__titulo" placeholder="Digite seu texto" onkeyup="apenasLetrasMinusculas(this)" rows="13" cols="38"></textarea>
             </div>
             <section class="sessao__cripto">
                 <div class="sessao__cripto__atencao">
@@ -34,7 +34,7 @@
         <section class="containerImagem">
             <div class="containerImagem__borda">
                 <div class="escondido">
-                    <textarea hidden class="containerImagem__borda__textoCopiado" id="palavra"></textarea>
+                    <textarea hidden class="containerImagem__borda__textoCopiado" id="palavra" rows="24"></textarea>
                     <button hidden onclick="botaoCopiar()" class="botao__copiar" id="palavraBotao">Copiar</button>
                 </div>
                 
@@ -48,8 +48,5 @@
             </div>
         </section>
     </main>
-
-    <footer>
-    </footer>
 </body>
 </html>
