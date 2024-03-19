@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <main class="main">
+        <div clas>
+            <img class="cabecalho__logo" src="/assets/logoAlura.png" alt="logoAlura">
+        </div>
+        <section class="principal">
+            <div class="principal__sessao">
+            <textarea id="texto" class="principal__sessao__titulo" placeholder="Digite seu texto" onkeyup="apenasLetrasMinusculas(this)"></textarea>
+            </div>
+            <section class="sessao__cripto">
+                <div class="sessao__cripto__atencao">
+                    <img src="/assets/exclamacao.png" alt="imagem de exclamação">
+                    <p class="sessao__cripto__atencao__texto">Apenas letras minúsculas e sem acento.</p>
+                </div>
+                <section class="botao">
+                    <button class="botao__criptografar" onclick="botaoCriptografar()" id="botaoCriptografar" type="submit" >Criptografar</button>
+                    <button class="botao__descriptografar" onclick="botaoDescriptografar()" id="botaoDescriptografar" type="submit" >Descriptografar</button> 
+                </section>
+            </section>
+        </section>
+
+        <section class="containerImagem">
+            <div class="containerImagem__borda">
+                <div class="escondido">
+                    <textarea hidden class="containerImagem__borda__textoCopiado" id="palavra"></textarea>
+                    <button hidden onclick="botaoCopiar()" class="botao__copiar" id="palavraBotao">Copiar</button>
+                </div>
+                
+                <div class="containerImagem__centro" id="imagem">
+                    <img class="containerImagem__centro__img" src="/assets/High quality products 1 1.svg" alt="imagem completa">
+                    <div class="containerImagem__texto">
+                        <h2 class="containerImagem__texto__maior">Nenhuma mensagem encontrada</h2>
+                        <p class="containerImagem__texto__menor">Digite um texto que você deseja criptografar ou descriptografar</p>
+                    </div>
+                </div> 
+            </div>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+</body>
+</html>
